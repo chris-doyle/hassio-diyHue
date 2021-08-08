@@ -78,5 +78,5 @@ LABEL \
 	org.opencontainers.image.created=${BUILD_DATE} \
 	org.opencontainers.image.revision=${BUILD_REF} \
 	org.opencontainers.image.version=${BUILD_VERSION}
-
+RUN ln -s /config/diyhue ./config
 CMD [ "./run.sh" ]
